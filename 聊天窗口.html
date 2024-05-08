@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ChatWindow.css">
+    <script src="聊天窗口.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="leftSide">
+        <!--header-->
+        <div class="header">
+            <div class="userimg">
+                <img src="芒果.png" class="cover">
+            </div>
+            <ul class="nav_icons">
+<!--                <li><img src="聊天.png"></li>-->
+                <li><img src="工具栏.png"></li>
+            </ul>
+        </div>
+        <!--search-->
+        <div class="search_chat">
+            <div>
+                <input type="text" placeholder="搜索...">
+                <img src="搜索.png">
+            </div>
+        </div>
+        <!--ChatList-->
+        <div class="chatlist">
+            <div class="block active">
+                <div class="imgbx">
+                    <img src="img1.jpg" class="cover">
+                </div>
+                <div class="details">
+                    <div class="listHead">
+                        <h4>开心果</h4>
+                        <p class="time">14:25</p>
+                    </div>
+                    <div class="message_p">
+                        <p>什么时候出去玩？</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="rightSide">
+        <div class="header">
+            <div class="imgText">
+                <div class="userimg">
+                    <img src="草莓.png" class="cover">
+                </div>
+                <h4>开心果<br><span>在线</span></h4>
+            </div>
+            <ul class="nav_icons">
+<!--                <li><img src="消息.png"></li>-->
+                <li><img src="更多.png"></li>
+            </ul>
+        </div>
+        <!--chatbox-->
+        <div class="chatBox">
+            <div class="message my_message">
+                <p>你在干嘛呢？<br><span>10:15</span> </p>
+            </div>
+            <div class="message frnd_message">
+                <p>在写作业<br><span>10:15</span> </p>
+            </div>
+            <div class="message frnd_message">
+                <p>天气太热了天气太热了天气太热了天气太热了天气太热了天气太热了天气太热了天气太热了天气太热了天气太热了天气太热了天气太热了<br><span>10:15 </span> </p>
+            </div>
+            <div class="message my_message">
+                <p>对啊 也不下雨<br><span>10:15</span> </p>
+            </div>
+            <div class="message my_message">
+                <p>希望以后凉快点<br><span>10:15</span> </p>
+            </div>
+        </div>
+
+        <!--chat input-->
+        <div class="chatbox_input">
+            <div class="instrument">
+                <img src="表情.png" >
+                <img src="应用.png">
+            </div>
+            <div class="msgSend">
+                <textarea>
+
+                </textarea>
+                <button v-on:click="send">发送</button>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script src="vue.js"></script>
+</body>
+</html>
